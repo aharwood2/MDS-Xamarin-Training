@@ -39,8 +39,8 @@ def main():
     # Create.
     for path in BOILERPLATE:
         shutil.copyfile(
-            os.path.join('bin', 'boilerplate', path),
-            path
+            os.path.join('boilerplate', path),
+            os.path.join('..', path)  
         )
 
 
